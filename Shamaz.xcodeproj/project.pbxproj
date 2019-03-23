@@ -12,9 +12,6 @@
 		0748355B223993230096B523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07483559223993230096B523 /* Main.storyboard */; };
 		0748355D223993230096B523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748355C223993230096B523 /* Assets.xcassets */; };
 		07483560223993230096B523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0748355E223993230096B523 /* LaunchScreen.storyboard */; };
-		0748356B223993230096B523 /* ShamazTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748356A223993230096B523 /* ShamazTests.swift */; };
-		07483576223993230096B523 /* ShamazUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07483575223993230096B523 /* ShamazUITests.swift */; };
-		078CFAC72240FB320041DA08 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 078CFAC62240FB320041DA08 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +39,8 @@
 		0748355C223993230096B523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0748355F223993230096B523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07483561223993230096B523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07483566223993230096B523 /* Shamaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shamaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0748356A223993230096B523 /* ShamazTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamazTests.swift; sourceTree = "<group>"; };
-		0748356C223993230096B523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07483571223993230096B523 /*  */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ""; path = ShamazUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07483575223993230096B523 /* ShamazUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamazUITests.swift; sourceTree = "<group>"; };
-		07483577223993240096B523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		078CFAC62240FB320041DA08 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		07483566223993230096B523 /* Shamaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Shamaz.app; path = ShamazTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07483571223993230096B523 /* ShamazUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamazUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +71,7 @@
 		07483549223993230096B523 = {
 			isa = PBXGroup;
 			children = (
-				078CFAC62240FB320041DA08 /* Default-568h@2x.png */,
 				07483554223993230096B523 /* Shamaz */,
-				07483569223993230096B523 /* ShamazTests */,
-				07483574223993230096B523 /* ShamazUITests */,
 				07483553223993230096B523 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,7 +81,7 @@
 			children = (
 				07483552223993230096B523 /* Shamaz.app */,
 				07483566223993230096B523 /* Shamaz.app */,
-				07483571223993230096B523 /*  */,
+				07483571223993230096B523 /* ShamazUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,24 +97,6 @@
 				07483561223993230096B523 /* Info.plist */,
 			);
 			path = Shamaz;
-			sourceTree = "<group>";
-		};
-		07483569223993230096B523 /* ShamazTests */ = {
-			isa = PBXGroup;
-			children = (
-				0748356A223993230096B523 /* ShamazTests.swift */,
-				0748356C223993230096B523 /* Info.plist */,
-			);
-			path = ShamazTests;
-			sourceTree = "<group>";
-		};
-		07483574223993230096B523 /* ShamazUITests */ = {
-			isa = PBXGroup;
-			children = (
-				07483575223993230096B523 /* ShamazUITests.swift */,
-				07483577223993240096B523 /* Info.plist */,
-			);
-			path = ShamazUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +152,7 @@
 			);
 			name = ShamazUITests;
 			productName = testUITests;
-			productReference = 07483571223993230096B523 /*  */;
+			productReference = 07483571223993230096B523 /* ShamazUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07483560223993230096B523 /* LaunchScreen.storyboard in Resources */,
-				078CFAC72240FB320041DA08 /* Default-568h@2x.png in Resources */,
 				0748355D223993230096B523 /* Assets.xcassets in Resources */,
 				0748355B223993230096B523 /* Main.storyboard in Resources */,
 			);
@@ -269,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0748356B223993230096B523 /* ShamazTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07483576223993230096B523 /* ShamazUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
