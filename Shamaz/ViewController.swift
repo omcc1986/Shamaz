@@ -10,13 +10,12 @@
 
     class ViewController: UIViewController {
 
-    let textpast = ["Where were you last sunday morning?", "What was the last film you watched?", "Have you travelled to another city in the past two weeks?", "Have you had any strange dreams lately?", "What was the last youtube video you watched?", "What was the last thing you bourgh online?", "What was the most exciting thing you did last week?", "What did you have for breakfast this morning?", "Have you been leasoning to any music in paticular lately?"]
         @IBOutlet weak var labels: UILabel!
 // The UILabel initally displays the title of the game "Shamaz" the game begins on clicking on 'the past' or 'the future' button.
 
 // Below are the questions for 'the past' and 'the future' buttons to play the Shamaz game
     
-    let textPast = ["Where were you last sunday morning?",
+    let textPast = ["Where were you last Sunday morning?",
                     "What was the last film you watched?",
                     "Have you travelled to another city in the past two weeks?",
                     "Have you had any strange dreams lately?",
@@ -33,17 +32,15 @@
                        "what will you be doing this coming weekend?",
                        "When is your next Holiday?"]
         
-        
-       
  // IBAction function for the past button randomly selects a question from the let textpast grouping above.
     @IBAction func past() {
-        labels.text = textPast[Int.random(int: 0...textPast.count - 1)]
-    }
+        labels.text = textPast[Int.random(in: 0...textPast.count - 1)]
+        }
         
 // IBAction function for the future button randomly selects a question from the let textfuture grouping above.
     @IBAction func future() {
-        labels.text = textFuture[Int.random(int: 0...textFuture.count - 1)]
-    }
+        labels.text = textFuture[Int.random(in: 0...textFuture.count - 1)]
+        }
         
 // IBAction function for the next player button generates a randon number from 1-10
     @IBAction func nextplayer() {
